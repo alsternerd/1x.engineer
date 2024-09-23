@@ -105,14 +105,18 @@
       <section id="buttons" class="item">
           <a class="nes-btn" href="https://github.com/cutenode/1x.engineer">Open the Repository</a>
           <a class="nes-btn is-success" href="https://github.com/cutenode/1x.engineer/pulls">Send a Pull Request</a>
-          <a class="nes-btn is-primary" href="https://twitter.com/intent/tweet?url=https%3A%2F%2F1x.engineer&text=✨%20I%27m%20a%201x%20engineer%20✨%20%0A" target="_blank" rel="noopener noreferrer">Tweet</a>
+          <div class="fsb-input-group mb-3">
+            <span class="fsb-input-group-text">https://</span>
+            <input required type="text" name="fediverse-domain" placeholder="mastodon.social" class="fsb-input fsb-domain" aria-label="Server domain">
+            <button class="fsb-button nes-btn is-primary" type="submit"></span>Share</button>
+          </div>
         </section>
     </footer>
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Press+Start+2P" rel="stylesheet">    
     <link id="fancyresources" href="https://unpkg.com/nes.css@2.2.0/css/nes.min.css" rel="stylesheet" />
     <link id="fancy" rel="stylesheet" href="styles/fancystyles.css">
     <link id="basic" rel="alternate" href="styles/basicstyles.css">
-    <script src="scripts/styleswitcher.js">
-    </script>
+    <script src="scripts/styleswitcher.js"></script>
+    <script src="scripts/fediverse-share-button.min.js"></script>
   </body>
 </html>
